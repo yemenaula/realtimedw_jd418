@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yemenaula-realtimedw_jd418"
+version = "0.1.0"
+description = "用一组明示的正则规则扫描输入，报告实时数仓架构师·冷启动与模型加载时间相关的命中行与片段"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "yemenaula" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://yemenaula.github.io"
+Repository = "https://github.com/yemenaula/realtimedw_jd418"
+Issues = "https://github.com/yemenaula/realtimedw_jd418/issues"
+
+[project.scripts]
+realtimedw_jd418 = "realtimedw_jd418:main"
+
+[tool.setuptools]
+py-modules = ["realtimedw_jd418"]
